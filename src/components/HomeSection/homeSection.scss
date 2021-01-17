@@ -1,0 +1,85 @@
+video {
+	object-fit: cover;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: -1;
+}
+
+.home__container {
+	
+	/* background: url('/images/img-home.jpg') center center/cover no-repeat; */
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+	object-fit: contain;
+
+	h1 {
+		color: #fff;
+		font-size: 100px;
+		margin-top: -100px;
+	}
+
+	p {
+		margin-top: 8px;
+		color: #fff;
+		font-size: 32px;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+			'Lucida Sans', Arial, sans-serif;
+	}
+}
+
+.home__buttons {
+	margin-top: 32px;
+}
+
+.home__buttons button {
+	width: 120px;
+	height: 50px;
+	border: 2px solid #9bd3d9;
+	border-radius: 10px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	align-items: center;
+}
+.buttons__portfolio {
+	background-color: transparent;
+	margin-right: 10px;
+	transition: 0.5s;
+	&:hover {
+		background-color: #9bd3d9;
+		cursor: pointer;
+	}
+}
+.buttons__skills {
+	margin-left: 10px;
+	background-color: #9bd3d9;
+	transition: 0.5s;
+	&:hover {
+		background-color: transparent;
+		cursor: pointer;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.home__container > h1 {
+		font-size: 70px;
+		margin-top: -150px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.home__container > h1 {
+		font-size: 50px;
+		margin-top: -100px;
+	}
+
+	.home__container > p {
+		font-size: 30px;
+	}
+}

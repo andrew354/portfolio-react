@@ -1,0 +1,93 @@
+.experience {
+	background-color: #1c1e25;
+	color: #fff;
+	p {
+		padding: 0px 10px 5px 20px;
+		line-height: 2rem;
+	}
+
+	.experience__companyLogo {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		&:hover {
+			content: attr(title);
+			cursor: pointer;
+		}
+	}
+
+	.experience__techSKillsIcons {
+		display: flex;
+		justify-content: space-around;
+	}
+	.reduxIcon {
+		width: 50px;
+		object-fit: contain;
+		margin-top: 20px;
+		background: transparent;
+	}
+	.fab {
+		font-size: 60px;
+		margin-top: 20px;
+		&:hover {
+			content: attr(title);
+			cursor: pointer;
+		}
+	}
+	.fa-html5 {
+		color: #f16529;
+		margin-left: 20px;
+	}
+	.fa-css3-alt {
+		color: #2965f1;
+	}
+	.fa-sass {
+		color: #cc6699;
+	}
+	.fa-js-square {
+		color: #f0db4f;
+	}
+	.fa-react {
+		color: #61dbfb;
+	}
+	.fa-vuejs {
+		color: #42b883;
+	}
+}
+.experience__professionalExp,
+.experience__previousExp,
+.experience__techSkills,
+.experience__softSkills {
+	text-align: center;
+	flex: 50%;
+	a {
+		display: inline-flex;
+		img {
+			margin-top: -5px;
+			margin-left: 6px;
+		}
+	}
+}
+
+.fas,
+.fab {
+	font-size: 25px;
+	margin-right: 10px;
+}
+.experience__techSKillsIcons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	i,
+	img {
+		margin-right: 28px;
+	}
+}
+
+@media (min-width: 980px) and (max-width: 2500px) {
+	.experience__section {
+		display: flex;
+		justify-content: space-around;
+		padding-top: 35px;
+	}
+}
